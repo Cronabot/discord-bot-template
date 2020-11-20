@@ -29,7 +29,7 @@ bot.on('ready', async () => {
     console.log(`Bot Ready: ${bot.user.username}`);
 
     try {
-        let link = await bot.generateInvite(['ADMINISTRATOR']);
+        let link = await bot.generateInvite(8);
         console.log(link);
     } catch (e) {
         console.error(e.stack);
